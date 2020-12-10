@@ -36,8 +36,8 @@ public class WordListAdapter extends
             // Change the word in the mWordList.
             mWordList.set(mPosition, "Clicked! " + element);
             // Notify the adapter, that the data has changed so it can
-            // update the RecyclerView to display the data.
-            mAdapter.notifyDataSetChanged();
+            // update the RecyclerView Item to display new data.
+            mAdapter.notifyItemChanged(mPosition);
         }
     }
 
